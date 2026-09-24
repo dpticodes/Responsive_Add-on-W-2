@@ -1,3 +1,75 @@
-h1 {
-  font-family: "Playfair Display", serif;
+:root {
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+body {
+  background: black;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url("images/hero_bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 200px 0;
+}
+header h1 {
+  font-family: var(--primary-font);
+  font-size: 128px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 25px 0;
+  line-height: 1.2;
+}
+header h2 {
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+header h3 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  letter-spacing: 5px;
+}
+header a {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 16px 32px;
+  border-radius: 100px;
+  letter-spacing: 0px;
+  margin-top: 32px;
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 30px 0;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  header a {
+    font-size: 8px;
+    padding: 8px 16px;
+    margin-top: 16px;
+  }
 }

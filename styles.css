@@ -10,9 +10,17 @@ body {
   margin: 0 auto;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/footer_bg_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
   background-image:
@@ -64,7 +72,7 @@ main {
   background: #1c0802;
 }
 
-.profile-img {
+.img-responsive {
   max-width: 100%;
   border-radius: 10px;
 }
@@ -106,6 +114,9 @@ main a {
 }
 .grid-3-col {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.text-center {
+  text-align: center;
 }
 footer {
   color: white;
@@ -182,7 +193,7 @@ footer a {
   main h3 {
     font-size: 14px;
   }
-  .profile-img {
+  .img-responsive {
     display: block;
     margin: 0 auto;
   }

@@ -12,6 +12,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 header {
   background-image:
@@ -45,7 +46,8 @@ header h3 {
   margin: 0 auto;
   letter-spacing: 5px;
 }
-header a {
+header a,
+main a {
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: normal;
@@ -58,26 +60,67 @@ header a {
   margin-top: 32px;
   display: inline-block;
 }
+main {
+  background: #1c0802;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+main h3 {
+  color: #f77660;
+  font-family: var(--secondary-font);
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 2px 0;
+  margin: 0;
+}
+main h2 {
+  color: white;
+  font-family: var(--primary-font);
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+main p {
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+main a {
+  display: block;
+  width: fit-content; /* Limits width to text size + padding */
+  margin: 0 auto;
+} /* aligns the button to the center of the space as well as limiting its size*/
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+.grid-2-col {
+  grid-template-columns: auto auto;
+}
+.grid-3-col {
   grid-template-columns: 1fr 2fr 2fr;
 }
 footer {
   color: white;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("images/footer_bg_2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0 66px;
 }
 footer h3 {
   font-family: var(--primary-font);
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  margin-right: 25px;
 }
 footer p {
   font-family: var(--secondary-font);
@@ -85,11 +128,9 @@ footer p {
   letter-spacing: 1px;
   line-height: 24px;
   opacity: 0.7;
-  margin-right: 25px;
 }
 footer ul {
   padding: 0;
-  margin-right: 25px;
 }
 footer li {
   font-family: var(--secondary-font);
@@ -104,6 +145,11 @@ footer a {
   line-height: 24px;
   letter-spacing: 1px;
 }
+@media (max-width: 1200px) {
+  section {
+    padding: 40px;
+  }
+}
 @media (max-width: 960px) {
   header {
     padding: 30px 0;
@@ -117,9 +163,27 @@ footer a {
   header h3 {
     font-size: 12px;
   }
-  header a {
-    font-size: 8px;
+  header a,
+  main a {
+    font-size: 12px;
     padding: 8px 16px;
     margin-top: 16px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+  section {
+    padding: 30px;
+  }
+  main h2 {
+    font-size: 26px;
+  }
+  main h3 {
+    font-size: 14px;
+  }
+  .profile-img {
+    display: block;
+    margin: 0 auto;
   }
 }

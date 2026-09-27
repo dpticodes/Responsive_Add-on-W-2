@@ -16,11 +16,12 @@ section {
 }
 section.secondary {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/footer_bg_1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 50px 80px;
 }
 header {
   background-image:
@@ -73,7 +74,7 @@ main {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 main h3 {
@@ -114,13 +115,16 @@ main a {
 }
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
 }
 .grid-3-col-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+  padding-top: 30px;
 }
 .text-center {
   text-align: center;
 }
+
 .card {
   background: white;
   border-radius: 15px;
@@ -228,7 +232,7 @@ footer a {
   }
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 16px;
+    grid-gap: 25px;
   }
   section {
     padding: 30px;
@@ -242,5 +246,8 @@ footer a {
   .img-responsive {
     display: block;
     margin: 0 auto;
+  }
+  section.secondary {
+    padding: 30px 20px;
   }
 }

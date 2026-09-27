@@ -168,6 +168,10 @@ main a {
   color: white;
   margin: 20px auto;
 }
+.grid.grid-3-col.audio-gallery {
+  grid-gap: 30px;
+  justify-content: center;
+}
 footer {
   color: white;
   background-image:
@@ -230,7 +234,8 @@ footer a {
     padding: 8px 16px;
     margin-top: 16px;
   }
-  .grid {
+  .grid,
+  .grid.grid-3-col.audio-gallery {
     grid-template-columns: 1fr;
     grid-gap: 25px;
   }
